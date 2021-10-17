@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem Statement 2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header><h1>Problem Statement 2</h1></header>
+
+      <h2>Problem Statement</h2>
+      <p>
+        Write a program in any language to find the maximum and 
+        minimum element in an array 
+      </p>
+
+      <hr />
+
+      <h2>Code</h2>
+      <pre>
+        <code>
+          #include &lt;bits/stdc++.h&gt;
+          using namespace std;
+          
+          int main()
+          {
+              
+              int arr[] = { 1, 45, 54, 71, 76, 12 };
+           
+              
+              int n = sizeof(arr) / sizeof(arr[0]);
+           
+             
+              cout << "Array: ";
+              for (int i = 0; i < n; i++)
+                  cout << arr[i] << " ";
+           
+              
+              cout << "\nMin Element = "
+                   << *min_element(arr, arr + n);
+           
+           
+              cout << "\nMax Element = "
+                   << *max_element(arr, arr + n);
+              
+              int &min = *min_element(arr,arr+n );
+              int &max = *max_element(arr,arr+n );
+              cout<<"\nFinding the Element using address variable";
+              cout<<"\n Min Element = "<< min;
+              cout<<"\n Max Element = "<< max;
+             
+          } 
+          
+        </code>
+      </pre>
+
+      <hr />
+
+      <h2>Sample Input</h2>
+      <pre>
+        <kbd>
+            1 45 54 71 76 12
+        </kbd>
+      </pre>
+
+      <hr />
+
+      <h2>Sample Output</h2>
+      <pre>
+        <samp>
+            Min Element = 1
+            Max Element = 76
+            Finding the Element using address variable
+            Min Element = 1
+            Max Element = 76
+        </samp>
+      </pre>
+
+      <hr />
+
+      <h2>Time Complexity</h2>
+      <pre>
+        <code>
+          O(n)
+        </code>
+      </pre>
+
+      <footer>Made by 2019BTECS00031</footer>
+    </div>
+  </body>
+</html>
